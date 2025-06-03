@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Weather Now</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-about">
+    <header>
+        {/* Canvas usually not needed on a static About page */}
+        <div class="header-content">
+            <div class="logo-text">WeatherNow</div>
+            <p class="subtitle">Your Free Weather on Demand</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" id="nav-current">Current Weather</a></li>
+                <li><a href="hourly_forecast.html" id="nav-hourly">Hourly</a></li>
+                <li><a href="maps.html" id="nav-maps">Maps & Radar</a></li>
+                <li><a href="alerts.html" id="nav-alerts">Alerts</a></li>
+                <li><a href="about.html" class="active" id="nav-about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="content-page">
+        <h2>About WeatherNow</h2>
+        <p>Welcome to WeatherNow, your reliable source for free, on-demand weather information!</p>
+        <p>Our mission is to provide accurate and easy-to-understand weather forecasts and data to help you plan your day, stay safe, and explore the fascinating world of meteorology.</p>
+        
+        <h3>Data Sources</h3>
+        <p>We primarily utilize data from the following sources:</p>
+        <ul>
+            <li><strong>National Weather Service (NWS) API:</strong> For forecasts, alerts, and observational data within the United States.</li>
+            <li><strong>Positionstack API:</strong> For geocoding location searches.</li>
+            <li><strong>RainViewer API:</strong> For radar map tile overlays.</li>
+            <li><strong>Google Gemini API:</strong> For AI-powered insights and explanations.</li>
+            <li><strong>OpenStreetMap:</strong> For base map tiles.</li>
+        </ul>
+
+        <h3>Development</h3>
+        <p>WeatherNow was developed with a passion for technology and accessible weather information. We strive to continually improve the site and add new features.</p>
+
+        <h3>Contact</h3>
+        <p>Feedback or questions are welcome!</p>
+    </main>
+
+    <footer>
+        <p>© 2023-2024 WeatherNow. Data by NWS, Positionstack, RainViewer, OpenStreetMap. AI by Google Gemini.</p>
+    </footer>
+    <!-- No dynamic scripts needed for a static About page unless it gets location context features -->
+    <!-- <script src="config.js"></script> -->
+    <!-- <script src="about_script.js"></script> -->
+</body>
+</html>

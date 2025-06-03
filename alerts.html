@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Severe Weather Alerts - Weather Now</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-alerts">
+    <header>
+        <!-- If you want animations on this page, include the canvas here: -->
+        <!-- <canvas id="weatherAnimationCanvas"></canvas> -->
+        <div class="header-content">
+            <div class="logo-text">WeatherNow</div>
+            <p class="subtitle">Your Free Weather on Demand</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" id="nav-current">Current Weather</a></li>
+                <li><a href="hourly_forecast.html" id="nav-hourly">Hourly</a></li>
+                <li><a href="maps.html" id="nav-maps">Maps & Radar</a></li>
+                <li><a href="alerts.html" class="active" id="nav-alerts">Alerts</a></li>
+                <li><a href="about.html" id="nav-about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="content-page">
+        <h2>Severe Weather Alerts for <span id="alerts-location-name">Your Area</span></h2>
+        <p id="alerts-status">Loading alerts...</p>
+        <div id="alerts-container">
+            <!-- Active alerts will be dynamically inserted here by alerts_script.js -->
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2023-2024 Weather Now. Weather data by NWS & Geocoding by Positionstack. AI features by Google Gemini.</p>
+    </footer>
+    <script src="config.js"></script>
+    <!-- If using canvas animations on this page, include three.js and weather-animations.js before alerts_script.js -->
+    <script src="alerts_script.js"></script>
+</body>
+</html>
